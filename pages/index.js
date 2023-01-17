@@ -43,14 +43,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         
-           {/* <Image
-                src="/public.background.jpeg"
-                alt="Background image"
-                className={styles.background}
-                width={100}
-                height={24}
-                priority
-              /> */}
+          
         
         <div className = {styles.form}>
         <label className={styles.formLabel}>First name :</label>

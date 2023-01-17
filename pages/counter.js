@@ -19,8 +19,8 @@ export default function Counter() {
         <>
             <main className={counterStyle.main}>
             <div className={counterStyle.container}>
-            <div>COUNTER PAGE</div>
-            <div>Welcome {isUser}</div>
+            <div className={counterStyle.title}>COUNTER PAGE</div>
+            <div className={counterStyle.greeting}>Welcome {isUser}</div>
                     <div><span className={counterStyle.value}>{number}</span> </div>
                    
 <div className={counterStyle.buttonSection}>
