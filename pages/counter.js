@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from "next/router"
-import counterStyle from '../styles/counter.module.css'
+import CounterStyle from '../styles/counter.module.css'
 
 export default function Counter() {
     const [number, setNumber] = useState(0);
