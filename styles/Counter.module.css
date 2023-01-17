@@ -1,0 +1,36 @@
+.main{
+  min-height: 100vh;
+  display: grid;
+  background-color:#504B3A;
+  
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+  padding: 3rem;
+}
+
+.value{
+font-size: 6rem;
+  font-weight: bold;
+}
+
+.button{
+  text-transform: uppercase;
+  background: transparent;
+  color: #DDE392;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-size: 1rem;
+  border: 2px solid #646F58;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin: 0.5rem;
+}

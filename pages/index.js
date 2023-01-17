@@ -12,11 +12,13 @@ export default function Home() {
 
   const router = useRouter();
 
+  // formData is the current state and setFormData is the function to update current state
   const [formData, setFormData] = useState({
     firstName: '',
     username : ''
   })
 
+  
   const CheckLogin = () => {
     console.log(formData.firstName);
     console.log(formData);
@@ -40,27 +42,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <label>First name :</label>
+        
+           {/* <Image
+                src="/public.background.jpeg"
+                alt="Background image"
+                className={styles.background}
+                width={100}
+                height={24}
+                priority
+              /> */}
+        
+        <div className = {styles.form}>
+        <label className={styles.formLabel}>First name :</label>
         <input
           type="text"
-          id="first"
+            id="first"
+            className={styles.input}
           name="first"
           pattern="[A-Z] {1} [a-z] {2,10}"
           title="The first letter should be uppercase"
           onChange ={(e => setFormData ({...formData,firstName: e.target.value}))}
         />
 
-        <label> Username:</label>
+        <label className={styles.formLabel}> User name:</label>
         <input
           type="text"
           id="username"
-          name="username"
+            name="username"
+            className={styles.input}
           required
           minLength="5"
           maxLength="10"
           onChange={(e => setFormData({ ...formData, username: e.target.value }))}
         />
-        <button type= "submit" onClick={() => CheckLogin()}>Submit</button>
+        </div>
+        <button className={styles.submitBtn}type= "submit" onClick={() => CheckLogin()}>Submit</button>
 
 
       </main>
