@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from "next/router"
-import CounterStyle from '../styles/Counter.module.css'
+import counterStyle from '../styles/Counter.module.css'
 
 export default function Counter() {
     const [number, setNumber] = useState(0);
@@ -17,15 +17,15 @@ export default function Counter() {
 
     return (
         <>
-            <main className={CounterStyle.main}>
-            <div className={CounterStyle.container}>
-            <div className={CounterStyle.title}>COUNTER PAGE</div>
-            <div className={CounterStyle.greeting}>Welcome {isUser}</div>
-                    <div><span className={CounterStyle.value}>{number}</span> </div>
+            <main className={counterStyle.main}>
+            <div className={counterStyle.container}>
+            <div className={counterStyle.title}>COUNTER PAGE</div>
+            <div className={counterStyle.greeting}>Welcome {isUser}</div>
+                    <div><span className={counterStyle.value}>{number}</span> </div>
                    
 <div className={counterStyle.buttonSection}>
-                    <button className={CounterStyle.button} onClick={() => setNumber(number + 1)}>Increment</button>
-                    <button className={CounterStyle.button} onClick={() => setNumber(number - 1)}>Decrement</button>
+                    <button className={counterStyle.button} onClick={() => setNumber(number + 1)}>Increment</button>
+                    <button className={counterStyle.button} onClick={() => setNumber(number - 1)}>Decrement</button>
                     </div>
                     </div>
             </main>
